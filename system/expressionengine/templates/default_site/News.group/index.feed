@@ -1,0 +1,3 @@
+{exp:xml_encode}
+        some content
+{/exp:xml_encode}

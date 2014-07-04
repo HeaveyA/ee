@@ -1,0 +1,14 @@
+{
+    "name":  "WTTraining",
+    "version": "0.0.1",
+    "author": "David Behan",
+    "homepage": "http://webtogether.ie/",
+	"dependencies": {
+		"jquery" : "1.10.2",
+		"normalize-scss" : "3.0.0",
+		"typeplate-starter-kit" : "latest",
+		"responsable" : "~2.1.0",
+		"bourbon" : "~3.1.8",
+		"animate.scss" : "latest"
+	}
+}

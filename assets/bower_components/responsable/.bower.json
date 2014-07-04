@@ -1,0 +1,20 @@
+{
+  "name": "Responsable-Grid-System",
+  "version": "2.1.0",
+  "main": "./scss/responsable.scss",
+  "author": "Abban Dunne",
+  "homepage": "http://responsablecss.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Abban/Responsable-Grid-System.git"
+  },
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.0",
+    "commit": "7183fdeaf7fe125f2ce9a4938e570d0cfd6f4ef0"
+  },
+  "_source": "git://github.com/Abban/Responsable-Grid-System.git",
+  "_target": "~2.1.0",
+  "_originalSource": "responsable"
+}

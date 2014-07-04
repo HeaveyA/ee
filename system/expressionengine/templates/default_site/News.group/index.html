@@ -1,0 +1,47 @@
+{layout="site/.html-layout"}
+    <section class="row">
+    		<h3 class="text-center">{embed:title}</h3>
+    </section>
+    <hr>
+
+    <div class="row">
+
+    <!-- left sidebar  -->
+    <aside class="small-3 medium-3 large-3 columns">
+                    {embed="embeds/.pricing_table"}
+                    {snippet_expanded}
+                    {snippet_expanded}
+                    {snippet_expanded}
+                    {snippet_expanded}
+                    {snippet_expanded}
+                    {snippet_expanded}
+                    {snippet_expanded}
+    </aside>
+
+    <!-- end of the left sidebar -->
+
+
+
+        <!-- these are the news posts, similar to the WP loop -->
+    <section class="small-7 medium-7 large-7 columns">
+       {exp:channel:entries channel="news_fields"}
+       <article>
+          <h2>{title}</h2>
+            <figure>
+                <img class="th" src="{image}" alt="">
+                <figcaption>{image_caption}</figcaption>
+            </figure>
+            <p>{news_body}</p>
+        </article>
+        {/exp:channel:entries}
+    </section>
+
+    <!-- end of the loop  -->
+
+    <!-- this is the sidebar -->
+        <aside class="small-2 medium-2 large-2 columns">
+                    {embed="embeds/.side"}
+        </aside>
+        <!-- this is the end of the sidebar -->
+    </div>
+
