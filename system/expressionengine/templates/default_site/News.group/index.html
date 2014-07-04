@@ -2,13 +2,12 @@
     <section class="row">
     		<h3 class="text-center">{embed:title}</h3>
     </section>
-    <hr>
 
     <div class="row">
 
     <!-- left sidebar  -->
     <aside class="small-3 medium-3 large-3 columns">
-                    {embed="embeds/.pricing_table"}
+                    {snippet_pricing}
                     {snippet_expanded}
                     {snippet_expanded}
                     {snippet_expanded}
@@ -33,14 +32,20 @@
             </figure>
             <p>{news_body}</p>
         </article>
+    <!-- pagination  -->
+    
         {/exp:channel:entries}
+        
+    <!-- end of the pagination  -->
+        {snippet_pagination}
     </section>
+
 
     <!-- end of the loop  -->
 
     <!-- this is the sidebar -->
         <aside class="small-2 medium-2 large-2 columns">
-                    {embed="embeds/.side"}
+                    {snippet_sidenav}
         </aside>
         <!-- this is the end of the sidebar -->
     </div>
