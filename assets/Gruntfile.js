@@ -77,3 +77,4 @@ module.exports = function(grunt)
     grunt.registerTask('buildScripts', ['concat', 'uglify']);
     grunt.registerTask('buildStyles', ['sass']);
 };
+
