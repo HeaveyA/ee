@@ -1,28 +1,11 @@
-{layout="site/.html-layout"}
+{layout="site/.left-right-sidebar-layout"}
     <section class="row">
     		<h3 class="text-center">{embed:title}</h3>
     </section>
 
-    <div class="row">
-
-    <!-- left sidebar  -->
-    <aside class="small-3 medium-3 large-3 columns">
-                    {snippet_pricing}
-                    {snippet_expanded}
-                    {snippet_expanded}
-                    {snippet_expanded}
-                    {snippet_expanded}
-                    {snippet_expanded}
-                    {snippet_expanded}
-                    {snippet_expanded}
-    </aside>
-
-    <!-- end of the left sidebar -->
-
-
 
         <!-- these are the news posts, similar to the WP loop -->
-    <section class="small-7 medium-7 large-7 columns">
+    <section>
        {exp:channel:entries channel="news_fields"}
        <article>
           <h2>{title}</h2>
@@ -43,10 +26,6 @@
 
     <!-- end of the loop  -->
 
-    <!-- this is the sidebar -->
-        <aside class="small-2 medium-2 large-2 columns">
-                    {snippet_sidenav}
-        </aside>
-        <!-- this is the end of the sidebar -->
-    </div>
+    <!-- this is the sidebar which in the .html-layout-->
+        
 
