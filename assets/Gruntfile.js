@@ -7,7 +7,7 @@ module.exports = function(grunt)
         pkg: grunt.file.readJSON('package.json'),
 
         jshint: {
-            files: ['js/src/*.js, js/src/content/*.js'],
+            files: ['js/src/*.js, js/src/content/*.js'], 
             options: {
                 globals: {
                     jQuery: true,
@@ -72,6 +72,7 @@ module.exports = function(grunt)
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('font-awesome');
 
     grunt.registerTask('default', ['buildScripts', 'buildStyles']);
     grunt.registerTask('buildScripts', ['concat', 'uglify']);

@@ -8,7 +8,30 @@
 	</section>
 	<!-- widget area and sidebar -->
 	
-    <!-- end of the sidebar -->
+
+        <!-- these are the news posts, similar to the WP loop -->
+    <section>
+       {exp:channel:entries channel="news_fields"}
+       <article>
+          <h2>{title}</h2>
+            <figure>
+                <img class="th" src="{image}" alt="">
+                <figcaption>{image_caption}</figcaption>
+            </figure>
+            <p>{news_body}</p>
+        </article>
+    <!-- pagination  -->
+    
+        {/exp:channel:entries}
+        
+    <!-- end of the pagination  -->
+        {snippet_pagination}
+    </section>
+
+
+    <!-- end of the loop  -->
+
+        
 
 
 
